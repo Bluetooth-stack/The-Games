@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Merienda:wght@300;400;500;600;700;800&family=Prata&family=Rubik+Iso&family=Silkscreen&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <span class="insideG"></span>
+            <span class="g">G</span>
+            <span class="ame">ames</span>
+        </div>
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <span class="material-symbols-outlined">account_circle</span>
+            <button id="login">Login</button>
+            <button id="join">Join Free</button>
+        </div>
+    </nav>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="https://wallpaperaccess.com/full/7445.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://wallpaperaccess.com/full/3081484.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://wallpaper-house.com/data/out/4/wallpaper2you_33311.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="https://metro.co.uk/wp-content/uploads/2020/02/Screenshot_2-37f5.jpg?quality=90&strip=all" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="https://4.bp.blogspot.com/-gjKgOLDsmN0/UZHEReorSRI/AAAAAAABAbg/NTtBIJbrq7Q/s1600/002988.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="https://img2.wallspic.com/crops/0/6/5/0/4/140560/140560-woodland-multiplayer_video_game-forest-old_growth_forest-bog-1920x1080.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="https://wallpapershome.com/images/wallpapers/warhammer-40000-regicide-1920x1080-review-best-strategy-games-of-2015-3721.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="https://cdna.artstation.com/p/assets/images/images/001/537/758/large/cristian-pop-totalconquest-fullhd-detail1.jpg?1448212000" style="width:100%">
+        </div>
+    </div>
+
+    
+
+    
+
+    <main>
+        <div class="filters" id="home">
+            <div class="input-search">
+                <input type="text" placeholder="Search games" id="search">
+                <button id="srch-btn"><span class="material-symbols-outlined">search</span></button>
+            </div>
+            <div class="drop">
+                <select name="category" id="catg" class="dropdown">
+                    <option value="">Category</option>
+                </select>
+                <select name="platform" id="platfrom" class="dropdown">
+                    <option value="">Platform</option>
+                </select>
+                <select name="sort-by" id="sort" class="dropdown">
+                    <option value="">Sort by</option>
+                    <option value="alphabetical">Alphabetical</option>
+                    <option value="date">Release Date</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="card-container">
+            <!-- cards -->
+        </div>
+        <div class="game-info-container">
+            <!-- <span class="close-btn material-symbols-outlined">close</span> -->
+        </div>
+        
+        <div class="modal">
+            <div class="pending">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="error">
+
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="logo">
+                <span class="insideG"></span>
+                <span class="g">G</span>
+                <span class="ame">ames</span>
+            </div>
+            <div class="about" id="about">
+                <h3>About</h3>
+                <p>
+                    Hey there ! I'm Siddharth, a frontend developer and a designer. The following site is developed using the "FREETOGAME" REST-Api,
+                    where you can find up to 300+ games, details of individual game and even can access the game link where you can buy or download or can play
+                    the Game. Its just for some entertainment and learning purpose. For more such designs or to Hire me please connect with me.
+                    
+                    Thank you!!
+                </p>
+            </div>
+            <div class="contact" id="contact">
+                <h3>Connect With me</h3>
+                <!-- <input type="text" placeholder="Your Name" >
+                <textarea name="details"  cols="40" rows="8" placeholder="Your Feedback is importent to me!!"></textarea>
+                <a href="mailto:someone@example.com" ></a> -->
+                <form action="mailto:recipient@example.com" method="get" id="contact">
+                    <input type="email" name="email" placeholder="Your Mail" id="feed">
+                    <textarea name="body" rows="5" cols="40" placeholder="Your Feedback is importent to me!!"></textarea>
+                    <button type="submit" id="send-mail">Send <span class="material-symbols-outlined">send</span></button>
+                  </form>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <div class="right">
+                © 2023 Siddharth
+            </div>
+            <div class="socials">
+                <a href="https://en-gb.facebook.com/"><i class="fa fa-facebook-f"></i></a>
+                <a href="https://www.pinterest.se/fromupnorth/web-design/"><i class="fa fa-pinterest"></i></a>
+                <a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/explore"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./config.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
